@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Portfolio</title>
+    <meta name="theme-color" content="#7de2b5">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- botón traductor -->
+<button class="translate-btn" id="translateBtn" aria-label="Cambiar idioma">
+    <img src="images/flag-us.png" id="translateFlag" alt="Cambiar idioma">
+</button>
+
+    <!-- navbar -->
+    <nav class="nav">
+        <ul class="nav-list">
+            <li class="active" data-section="home">
+                <i class='bx bx-home'></i>
+                <span class="tooltrip" data-i18n="navHome">Home</span>
+            </li>
+            <li data-section="about">
+                <i class='bx bx-user'></i>
+                <span class="tooltrip" data-i18n="navAbout">Sobre mí</span>
+            </li>
+            <li data-section="resume">
+                <i class='bx bx-detail'></i>
+                <span class="tooltrip" data-i18n="navResume">Experiencia</span>
+            </li>
+            <li data-section="portfolio">
+                <i class='bx bx-briefcase'></i>
+                <span class="tooltrip" data-i18n="navPortfolio">Portafolio</span>
+            </li>
+            <li data-section="contact">
+                <i class='bx bx-envelope'></i>
+                <span class="tooltrip" data-i18n="navContact">Contacto</span>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="conteiner">
+        <div class="box">
+
+            <!-- HOME -->
+            <section class="section home" id="home">
+                <div class="home-info">
+                    <h3 data-i18n="homeGreeting">Hola, soy</h3>
+                    <h1>Manuel Polo</h1>
+                    <h3 data-i18n="homeRole">Estudiante de Ingeniería de Software</h3>
+                    <p class="desc" data-i18n="homeDesc">
+                        Soy un estudiante de Ingeniería de Software con conocimientos en desarrollo, gestión y diseño,
+                        comprometido con aprender constantemente y enfrentar nuevos desafíos. Busco activamente
+                        oportunidades
+                        para crecer profesionalmente, potenciar mis habilidades y adquirir nuevas competencias que me
+                        permitan diseñar software innovador y de alto rendimiento.
+                    </p>
+
+                    <div class="btn-sci">
+                        <a href="assets/CV-Manuel-Polo-ES.pdf" download="Manuel-Polo-CV.pdf" class="btn" id="cvBtn"
+                            data-i18n="downloadCV">
+                            Descargar CV
+                        </a>
+
+                        <div class="sci">
+                            <a href="https://github.com/polomanuel860-byte" target="_blank" rel="noopener noreferrer">
+                                <i class='bx bxl-github'></i>
+                                <span class="tooltrip" data-i18n="tooltipGithub">Github</span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/manuel-polo-mesa" target="_blank" rel="noopener noreferrer">
+                                <i class='bx bxl-linkedin-square'></i>
+                                <span class="tooltrip" data-i18n="tooltipLinkedin">Linkedin</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="img-wrapper">
+                    <div class="img-box home-img">
+                        <img src="images/unnamed (1).jpg" alt="Manuel Polo" class="img">
+                    </div>
+                </div>
+            </section>
+
+            <!-- ABOUT -->
+            <section class="section about" id="about">
+                <div class="img-wrapper">
+                    <div class="img-box about-img">
+                        <img src="images/Image.png" alt="" class="img">
+                    </div>
+                </div>
+
+                <div class="about-info">
+                    <h2 class="title" data-i18n="aboutTitle">Sobre Mí</h2>
+                    <h3 data-i18n="aboutRole">Aprendo, creo, evoluciono</h3>
+                    <p class="desc" data-i18n="aboutDesc">
+                        Soy un estudiante de Ingeniería de Software con conocimientos en desarrollo, gestión y diseño,
+                        comprometido con aprender constantemente y enfrentar nuevos desafíos. Busco activamente
+                        oportunidades
+                        para crecer profesionalmente, potenciar mis habilidades y adquirir nuevas competencias que me
+                        permitan diseñar software innovador y de alto rendimiento.
+                    </p>
+                </div>
+            </section>
+
+            <!-- RESUME -->
+            <section class="section resume" id="resume">
+                <h2 class="title" data-i18n="resumeTitle">Curriculum Vitae</h2>
+                <div class="tab-box">
+                    <div class="tab-list resume-list active">
+                        <h3 data-i18n="experienceTab">Experiencia</h3>
+                    </div>
+                    <div class="tab-list resume-list">
+                        <h3 data-i18n="skillsTab">Habilidades</h3>
+                    </div>
+                    <div class="tab-list resume-list">
+                        <h3 data-i18n="educationTab">Educación</h3>
+                    </div>
+                </div>
+
+                <div class="tab-wrapper">
+                    <div class="tab-grid resume-box experience active">
+                        <div class="tab-item resume-item">
+                            <h4>2025 - Presente</h4>
+                            <h4 data-i18n="exp1Role">Pasante</h4>
+                            <h4>Methodica Technology &amp; Co</h4>
+                            <p data-i18n="exp1Desc">
+                                Actualmente me desarrollo en el entorno de la nube AWS,
+                                adquiriendo experiencia práctica en el uso de servicios cloud y buenas prácticas para el
+                                despliegue y gestión de aplicaciones.
+                            </p>
+                        </div>
+
+                        <div class="tab-item resume-item">
+                            <h4>2025 - Presente</h4>
+                            <h4 data-i18n="exp2Role">Programación Competitiva</h4>
+                            <h4 data-i18n="exp2Institution">Instituto Tecnológico de Santo Domingo</h4>
+                            <p data-i18n="exp2Desc">
+                                Actualmente estoy practicando programación competitiva, lo que me ha permitido
+                                fortalecer mis habilidades de resolución de problemas. Gracias a este proceso, logré
+                                clasificarme para las ICPC
+                                Caribbean Finals.
+                            </p>
+                        </div>
+
+                        <div class="tab-item resume-item">
+                            <h4>2024 - 2025</h4>
+                            <h4 data-i18n="exp3Role">Pasante</h4>
+                            <h4>HST Soluciones</h4>
+                            <p data-i18n="exp3Desc">
+                                Me desarrollé en el área de documentación de procesos, elaborando y organizando
+                                documentación técnica y funcional, y simultáneamente como programador, participando en
+                                la creación, mantenimiento y mejora de software para sistemas IBM i, asegurando el
+                                correcto funcionamiento y soporte de las aplicaciones.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="tab-grid resume-box skills">
+                        <div class="tab-item resume-item"><i class='bx bxl-aws'></i><p>AWS</p></div>
+                        <div class="tab-item resume-item"><i class='bx bxl-python'></i><p>Python</p></div>
+                        <div class="tab-item resume-item"><i class='bx bxl-flutter'></i><p>Flutter</p></div>
+                        <div class="tab-item resume-item"><i class='bx bxs-data'></i><p>MySQL</p></div>
+                        <div class="tab-item resume-item"><i class='bx bxl-postgresql'></i><p>PostgreSQL</p></div>
+                        <div class="tab-item resume-item"><i class='bx bxl-figma'></i><p>Figma</p></div>
+                        <div class="tab-item resume-item"><i class='bx bxl-git'></i><p>Git</p></div>
+                        <div class="tab-item resume-item"><i class='bx bxl-github'></i><p>GitHub</p></div>
+                        <div class="tab-item resume-item"><i class='bx bxl-html5'></i><p>HTML5</p></div>
+                        <div class="tab-item resume-item"><i class='bx bxl-css3'></i><p>CSS3</p></div>
+                        <div class="tab-item resume-item"><i class='bx bxl-javascript'></i><p>JavaScript</p></div>
+                        <div class="tab-item resume-item"><i class='bx bxl-react'></i><p>React.js</p></div>
+                        <div class="tab-item resume-item"><i class='bx bxl-tailwind-css'></i><p>Tailwind CSS</p></div>
+                        <div class="tab-item resume-item"><i class='bx bxl-nodejs'></i><p>Node.js</p></div>
+                    </div>
+
+                    <div class="tab-grid resume-box education">
+                        <div class="tab-item resume-item">
+                            <h4>2023 - Presente</h4>
+                            <h4 data-i18n="edu1Title">Estudiante de Ingeniería de Software</h4>
+                            <h4 data-i18n="edu1Institution">Instituto Tecnológico de Santo Domingo</h4>
+                            <p data-i18n="edu1Desc">
+                                Cursando el décimo trimestre en la carrera de Ingeniería de Software con un promedio de
+                                3.85. Actualmente ejerciendo el papel de monitor en la materia "Modelos y Métodos de la
+                                Ingeniería de Software".
+                            </p>
+                        </div>
+
+                        <div class="tab-item resume-item">
+                            <h4>2026 - Presente</h4>
+                            <h4 data-i18n="edu2Title">AWS Certified Cloud Practitioner</h4>
+                            <h4 data-i18n="edu2Institution">Amazon</h4>
+                            <p data-i18n="edu2Desc">
+                                Preparación y formación en fundamentos de computación en la nube, seguridad,
+                                arquitectura y servicios principales de AWS.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- PORTFOLIO -->
+            <section class="section portfolio" id="portfolio">
+                <h2 class="title" data-i18n="portfolioTitle">Portafolio</h2>
+
+                <div class="tab-box">
+                    <div class="tab-list portfolio-list active">
+                        <h3 data-i18n="projectsTab">Proyectos</h3>
+                    </div>
+                    <div class="tab-list portfolio-list">
+                        <h3 data-i18n="servicesTab">Servicios</h3>
+                    </div>
+                </div>
+
+                <div class="tab-wrapper">
+                    <div class="tab-grid portfolio-box projects active">
+                        <div class="tab-item portfolio-item">
+                            <div class="work-img">
+                                <img src="images/unnamed (1).jpg" alt="">
+                            </div>
+
+                            <div class="work-info">
+                                <h4 data-i18n="project1Title">Proyecto Digemaps</h4>
+                                <p data-i18n="project1Desc">
+                                    Desarrollé, junto a un equipo de trabajo, una aplicación web para la gestión y
+                                    validación de muestras de laboratorio. El sistema permite asignar analistas,
+                                    visualizar de forma detallada los resultados de análisis físico-químicos y
+                                    microbiológicos, aprobar o devolver muestras según los resultados obtenidos y
+                                    generar reportes estructurados en formato PDF. El proyecto fue enfocado en
+                                    garantizar trazabilidad, claridad en la información y una experiencia de uso
+                                    profesional para los distintos roles del laboratorio.
+                                </p>
+                            </div>
+
+                            <div class="tech-used">
+                                <p data-i18n="project1Tech">Next.js, React, APIs REST, Tailwind CSS, JWT, jsPDF,
+                                    html2canvas</p>
+                            </div>
+
+                            <div class="portfolio-icon work-icon">
+                                <a href="https://tu-demo.com" target="_blank" rel="noopener noreferrer">
+                                    <i class='bx bx-arrow-back'></i>
+                                    <span class="tooltrip" data-i18n="tooltipProject">Info</span>
+                                </a>
+                                <a href="https://github.com/TU_USUARIO/TU_REPO" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <i class='bx bxl-github'></i>
+                                    <span class="tooltrip" data-i18n="tooltipRepo">Repositorio de Github</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-grid portfolio-box services">
+
+                        <div class="tab-item portfolio-item service-item">
+                            <div class="service-icon">
+                                <i class="bx bx-code-alt icon"></i>
+                            </div>
+                            <h4 data-i18n="service1Title">Desarrollo de Aplicaciones Web</h4>
+                            <p data-i18n="service1Desc">
+                                Construcción de plataformas dinámicas, escalables y con un enfoque prioritario
+                                en la experiencia del usuario (UX). Utilizo tecnologías modernas para garantizar
+                                interfaces rápidas, seguras y adaptables a cualquier dispositivo.
+                            </p>
+                        </div>
+
+                        <div class="tab-item portfolio-item service-item">
+                            <div class="service-icon">
+                                <i class="bx bx-mobile-alt icon"></i>
+                            </div>
+                            <h4 data-i18n="service2Title">Desarrollo de Aplicaciones Móviles</h4>
+                            <p data-i18n="service2Desc">
+                                Creación de soluciones móviles nativas o multiplataforma con alto rendimiento.
+                                Me enfoco en desarrollar aplicaciones intuitivas que aprovechan al máximo las
+                                capacidades de los dispositivos para ofrecer una navegación fluida.
+                            </p>
+                        </div>
+
+                        <div class="tab-item portfolio-item service-item">
+                            <div class="service-icon">
+                                <i class="bx bx-cloud icon"></i>
+                            </div>
+                            <h4 data-i18n="service3Title">Implementaciones de Servicios en la Nube (AWS)</h4>
+                            <p data-i18n="service3Desc">
+                                Despliegue y gestión de infraestructura robusta utilizando la potencia de AWS.
+                                Optimizo recursos para asegurar alta disponibilidad, seguridad de datos y
+                                escalabilidad automática según las necesidades de tu proyecto.
+                            </p>
+                        </div>
+
+                        <div class="tab-item portfolio-item service-item">
+                            <div class="service-icon">
+                                <i class="bx bx-data icon"></i>
+                            </div>
+                            <h4 data-i18n="service4Title">Diseño e Implementación de Bases de Datos Relacionales</h4>
+                            <p data-i18n="service4Desc">
+                                Arquitectura de datos eficiente y estructurada para garantizar la integridad
+                                de la información. Me especializo en el diseño lógico, optimización de consultas
+                                y administración de sistemas que soportan aplicaciones de alto tráfico.
+                            </p>
+                        </div>
+
+                        <div class="tab-item portfolio-item service-item">
+                            <div class="service-icon">
+                                <i class="bx bx-layout icon"></i>
+                            </div>
+                            <h4 data-i18n="service5Title">Modelado y diseño de interfaces de usuario (UI)</h4>
+                            <p data-i18n="service5Desc">
+                                Transformación de ideas en prototipos interactivos de alta fidelidad.
+                                Me especializo en el diseño de layouts, tipografía y paletas de colores
+                                que refuerzan la identidad de marca, asegurando una transición
+                                fluida entre el diseño y el desarrollo.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CONTACT -->
+            <section class="section contact" id="contact">
+                <h2 class="title" data-i18n="contactTitle">Contacto</h2>
+                <div class="contact-wrapper">
+                    <form class="contact-form" id="contactForm">
+                        <h3 data-i18n="contactSubtitle">¡Trabajemos juntos!</h3>
+
+                        <div class="field-box">
+                            <input type="text" name="name" placeholder="Nombre" data-i18n-placeholder="contactName" required>
+                            <input type="email" name="email" placeholder="Correo electrónico" data-i18n-placeholder="contactEmail" required>
+                            <input type="text" name="phone" placeholder="Teléfono" data-i18n-placeholder="contactPhone" required>
+                            <input type="text" name="subject" placeholder="Asunto" data-i18n-placeholder="contactSubject" required>
+                            <textarea name="message" placeholder="Deja tu mensaje" data-i18n-placeholder="contactMessage" required></textarea>
+                        </div>
+
+                        <div class="contact-btn">
+                            <button type="submit" class="btn" data-i18n="sendMessage">Enviar mensaje</button>
+                        </div>
+
+                        <p id="formMessage" class="form-message"></p>
+                    </form>
+                </div>
+            </section>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
